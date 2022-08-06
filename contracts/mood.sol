@@ -1,4 +1,5 @@
-//specify the version of solidity
+// SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.15;
 
 /// a simple set and get function for mood defined: 
