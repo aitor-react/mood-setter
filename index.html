@@ -24,6 +24,8 @@
       margin: 10px 0px 5px 0px;
     }
   </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -95,9 +97,13 @@
     }
 
     async function setMood() {
-      const mood = document.getElementById("mood").value;
-      const setMoodPromise = MoodContract.setMood(mood);
-      await setMoodPromise;
+      mood = $("#mood").val()
+      if (mood == "") {
+        alert("Please input mood");
+      } else {
+        setMoodPromise = MoodContract.setMood(mood);
+        await setMoodPromise;
+      }
     }
 
 
