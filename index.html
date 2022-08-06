@@ -91,7 +91,7 @@
     async function getMood() {
       const getMoodPromise = MoodContract.getMood();
       const Mood = await getMoodPromise;
-      console.log(Mood);
+      alert("The current mood is: " + Mood);
     }
 
     async function setMood() {
