@@ -2,40 +2,46 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <style>
     body {
+      background-color: black;
       text-align: center;
+      color: white;
       font-family: Arial, Helvetica, sans-serif;
     }
-
-    div {
-      width: 20%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    button {
-      width: 100%;
-      margin: 10px 0px 5px 0px;
-    }
   </style>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div>
-    <h1>This is my dApp!</h1>
-    <p>Here we can set or get the mood:</p>
-    <label for="mood">Input Mood:</label> <br />
-    <input type="text" id="mood" />
-    <button onclick="getMood()">Get Mood</button>
-    <button onclick="setMood()">Set Mood</button>
+  <div class="container">
+    <div class="form-group">
+      <h1>This is my dApp!</h1>
+      <p>Here we can set or get the mood:</p>
+      <div class="row">
+        <div class="col offset-md-4 col-md-4">
+          <label for="mood">Input Mood:</label> <br />
+          <input class="form-control" type="text" id="mood" />
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col offset-md-4 col-md-2">
+          <button class="btn btn-primary btn-block" onclick="getMood()">Get Mood</button>
+        </div>
+        <div class="col col-md-2">
+          <button class="btn btn-light btn-block" onclick="setMood()">Set Mood</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
