@@ -8,6 +8,6 @@ Contract deployment on Goerli can be found [HERE](https://goerli.etherscan.io/ad
 
 ## Interact with the contract
 
-- Open [the site](https://mood-setter.vercel.app/)) with your browser.
+- Open [the site](https://mood-setter.vercel.app/) with your browser.
 - Connect your wallet
 - Now you are ready to interact with the contract `set Mood` and confirm the transaction 
